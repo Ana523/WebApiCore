@@ -1,0 +1,14 @@
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\UserWebApi.deps.json
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\UserWebApi.runtimeconfig.json
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\UserWebApi.runtimeconfig.dev.json
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\UserWebApi.dll
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\UserWebApi.pdb
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.csprojAssemblyReference.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.RazorAssemblyInfo.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.RazorAssemblyInfo.cs
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.AssemblyInfoInputs.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.AssemblyInfo.cs
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.dll
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\UserWebApi.pdb

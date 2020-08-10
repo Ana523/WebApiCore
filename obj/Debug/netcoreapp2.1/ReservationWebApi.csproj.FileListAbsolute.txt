@@ -1,0 +1,14 @@
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\ReservationWebApi.deps.json
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\ReservationWebApi.runtimeconfig.json
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\ReservationWebApi.runtimeconfig.dev.json
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\ReservationWebApi.dll
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\bin\Debug\netcoreapp2.1\ReservationWebApi.pdb
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.csprojAssemblyReference.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.RazorAssemblyInfo.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.RazorAssemblyInfo.cs
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.AssemblyInfoInputs.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.AssemblyInfo.cs
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.dll
+C:\Users\Nina\source\repos\UserWebApi\UserWebApi\obj\Debug\netcoreapp2.1\ReservationWebApi.pdb
