@@ -19,6 +19,11 @@ namespace UserWebApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .ConfigureLogging(logBuilder =>
+                {
+                    logBuilder.ClearProviders(); // Remove all providers
+                    logBuilder.AddConsole(); // Add console logging provider
+                })
                 .UseStartup<Startup>();
     }
 }

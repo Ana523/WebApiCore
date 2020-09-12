@@ -10,7 +10,7 @@ using UserWebApi.Models;
 namespace UserWebApi.Migrations
 {
     [DbContext(typeof(AuthenticationContext))]
-    [Migration("20200806133605_InitialCreate")]
+    [Migration("20200817152013_Initial Create")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -33,7 +33,7 @@ namespace UserWebApi.Models
         public int NumOfPeople { get; set; }
 
         [Required]
-        [Column(TypeName = "int")]
-        public int NumOfRooms { get; set; }
+        [Column(TypeName = "nvarchar(150)")]
+        public string RoomType { get; set; }
     }
 }
