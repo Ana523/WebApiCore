@@ -91,6 +91,7 @@ namespace UserWebApi.Controllers
             {
                 if (reservation.RoomType != getRoomType && reservation.RoomType == r.RoomType && RoomBooked || reservation.RoomType == getRoomType && (reservation.DateFrom != getDateFrom || reservation.DateTo != getDateTo || (reservation.DateFrom != getDateFrom && reservation.DateTo != getDateTo)) && RoomBooked)
                 {
+                    _logger.LogInformation($"{reservation.RoomType} is not available {(DateToTransformed == DateFromTransformed ? $"on the date {DateFromTransformed}" : $"on all or some dates in the period from {DateFromTransformed} to {DateToTransformed}")}");
                     return UnprocessableEntity(new { message = $"{reservation.RoomType} is not available {(DateToTransformed == DateFromTransformed ? $"on the date {DateFromTransformed}" : $"on all or some dates in the period from {DateFromTransformed} to {DateToTransformed}")}" });
                 }
             }
@@ -138,10 +139,12 @@ namespace UserWebApi.Controllers
             var DateFromTransformed = reservation.DateFrom.ToString().Substring(0, 11);
             var DateToTransformed = reservation.DateTo.ToString().Substring(0, 11);
 
+            // Display message to the user if certain room is already booked for given period
             foreach (var r in _context.Reservations)
             {
                 if (reservation.RoomType == r.RoomType && RoomBooked)
                 {
+                    _logger.LogInformation($"{reservation.RoomType} is not available {(DateToTransformed == DateFromTransformed ? $"on the date {DateFromTransformed}" : $"on all or some dates in the period from {DateFromTransformed} to {DateToTransformed}")}");
                     return UnprocessableEntity(new { message = $"{reservation.RoomType} is not available {(DateToTransformed == DateFromTransformed ? $"on the date {DateFromTransformed}" : $"on all or some dates in the period from {DateFromTransformed} to {DateToTransformed}")}" });
                 }
             }       

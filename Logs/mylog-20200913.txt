@@ -1,0 +1,405 @@
+2020-09-13T11:06:03.4806165+02:00 0HM2NOGUMIHUV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/values   (ca22a1cb)
+2020-09-13T11:06:04.4168087+02:00 0HM2NOGUMIHUV:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "UserWebApi.Controllers.ValuesController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:06:04.7990190+02:00 0HM2NOGUMIHUV:00000001 [INF] Executing action method "UserWebApi.Controllers.ValuesController.Get (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:06:04.8205871+02:00 0HM2NOGUMIHUV:00000001 [INF] Executed action method "UserWebApi.Controllers.ValuesController.Get (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 16.2777ms. (50a9e262)
+2020-09-13T11:06:04.9575758+02:00 0HM2NOGUMIHUV:00000001 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2020-09-13T11:06:05.5183157+02:00 0HM2NOGUMIHUV:00000001 [INF] Executed action "UserWebApi.Controllers.ValuesController.Get (UserWebApi)" in 728.6738ms (afa2e885)
+2020-09-13T11:06:05.5272952+02:00 0HM2NOGUMIHUV:00000001 [INF] Request finished in 2124.476ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:07:13.2904586+02:00 0HM2NOGUMIHV0:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/ApplicationUser/SignIn   (ca22a1cb)
+2020-09-13T11:07:13.2918491+02:00 0HM2NOGUMIHV0:00000001 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:13.2940622+02:00 0HM2NOGUMIHV0:00000001 [INF] Request finished in 3.7174ms 204  (791a596a)
+2020-09-13T11:07:13.3167605+02:00 0HM2NOGUMIHV0:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:61038/api/ApplicationUser/SignIn application/json 41 (ca22a1cb)
+2020-09-13T11:07:13.3175046+02:00 0HM2NOGUMIHV0:00000002 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:13.3426536+02:00 0HM2NOGUMIHV0:00000002 [INF] Route matched with "{action = \"SignIn\", controller = \"ApplicationUser\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(UserWebApi.Models.SignInModel)" on controller "UserWebApi.Controllers.ApplicationUserController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:07:13.4202784+02:00 0HM2NOGUMIHV0:00000002 [INF] Executing action method "UserWebApi.Controllers.ApplicationUserController.SignIn (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:07:13.4253405+02:00 0HM2NOGUMIHV0:00000002 [INF] Finding user with username: Ana (416b3ffb)
+2020-09-13T11:07:13.7129820+02:00 0HM2NOGUMIHV0:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"AuthenticationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:07:14.3249154+02:00 0HM2NOGUMIHV0:00000002 [INF] Executed DbCommand ("23"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[FullName]
+FROM [AspNetUsers] AS [u]
+WHERE ([u].[Discriminator] = N'ApplicationUser') AND ([u].[NormalizedUserName] = @__normalizedUserName_0)" (0723d8ff)
+2020-09-13T11:07:14.4549786+02:00 0HM2NOGUMIHV0:00000002 [INF] User Ana is about to be Logged In! (e24628a3)
+2020-09-13T11:07:14.4612033+02:00 0HM2NOGUMIHV0:00000002 [INF] Executed action method "UserWebApi.Controllers.ApplicationUserController.SignIn (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1040.486ms. (50a9e262)
+2020-09-13T11:07:14.4666234+02:00 0HM2NOGUMIHV0:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-09-13T11:07:14.4982819+02:00 0HM2NOGUMIHV0:00000002 [INF] Executed action "UserWebApi.Controllers.ApplicationUserController.SignIn (UserWebApi)" in 1155.2142ms (afa2e885)
+2020-09-13T11:07:14.5086399+02:00 0HM2NOGUMIHV0:00000002 [INF] Request finished in 1192.1264ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:07:16.0110895+02:00 0HM2NOGUMIHV0:00000003 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:07:16.0114811+02:00 0HM2NOGUMIHV0:00000003 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:16.0117280+02:00 0HM2NOGUMIHV0:00000003 [INF] Request finished in 5.494ms 204  (791a596a)
+2020-09-13T11:07:16.0373847+02:00 0HM2NOGUMIHV0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:07:16.0375155+02:00 0HM2NOGUMIHV0:00000004 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:16.0541119+02:00 0HM2NOGUMIHV0:00000004 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:07:16.0637153+02:00 0HM2NOGUMIHV0:00000004 [INF] Route matched with "{action = \"GetReservations\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[UserWebApi.Models.Reservation] GetReservations()" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:07:16.0868044+02:00 0HM2NOGUMIHV0:00000004 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:07:16.0976173+02:00 0HM2NOGUMIHV0:00000004 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:07:16.0986580+02:00 0HM2NOGUMIHV0:00000004 [INF] Getting all reservations (68a71175)
+2020-09-13T11:07:16.0989143+02:00 0HM2NOGUMIHV0:00000004 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.6516ms. (50a9e262)
+2020-09-13T11:07:16.0990969+02:00 0HM2NOGUMIHV0:00000004 [INF] Executing ObjectResult, writing value of type '"Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[UserWebApi.Models.Reservation, UserWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-09-13T11:07:16.1155715+02:00 0HM2NOGUMIHV0:00000004 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:07:16.5092534+02:00 0HM2NOGUMIHV0:00000004 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:07:16.5632005+02:00 0HM2NOGUMIHV0:00000004 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" in 499.2198ms (afa2e885)
+2020-09-13T11:07:16.5633889+02:00 0HM2NOGUMIHV0:00000004 [INF] Request finished in 526.0585ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:07:25.2106850+02:00 0HM2NOGUMIHV0:00000005 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservationById/189   (ca22a1cb)
+2020-09-13T11:07:25.2111587+02:00 0HM2NOGUMIHV0:00000005 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:25.2112742+02:00 0HM2NOGUMIHV0:00000005 [INF] Request finished in 0.6471ms 204  (791a596a)
+2020-09-13T11:07:25.2203275+02:00 0HM2NOGUMIHV0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservationById/189   (ca22a1cb)
+2020-09-13T11:07:25.2214453+02:00 0HM2NOGUMIHV0:00000006 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:25.2222830+02:00 0HM2NOGUMIHV0:00000006 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:07:25.2293009+02:00 0HM2NOGUMIHV0:00000006 [INF] Route matched with "{action = \"GetReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReservation(Int32)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:07:25.2303242+02:00 0HM2NOGUMIHV0:00000006 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:07:25.2316797+02:00 0HM2NOGUMIHV0:00000006 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:07:25.2339745+02:00 0HM2NOGUMIHV0:00000006 [INF] Getting reservation with id = 189 (37dc43e5)
+2020-09-13T11:07:25.2345680+02:00 0HM2NOGUMIHV0:00000006 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:07:25.2560182+02:00 0HM2NOGUMIHV0:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:07:25.2648225+02:00 0HM2NOGUMIHV0:00000006 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 33.007ms. (50a9e262)
+2020-09-13T11:07:25.2653738+02:00 0HM2NOGUMIHV0:00000006 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:07:25.2658893+02:00 0HM2NOGUMIHV0:00000006 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" in 36.1007ms (afa2e885)
+2020-09-13T11:07:25.2660709+02:00 0HM2NOGUMIHV0:00000006 [INF] Request finished in 45.8023ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:07:25.3929832+02:00 0HM2NOGUMIHV0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservationById/189   (ca22a1cb)
+2020-09-13T11:07:25.3931139+02:00 0HM2NOGUMIHV0:00000007 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:25.3934017+02:00 0HM2NOGUMIHV0:00000007 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:07:25.3937294+02:00 0HM2NOGUMIHV0:00000007 [INF] Route matched with "{action = \"GetReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReservation(Int32)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:07:25.3938213+02:00 0HM2NOGUMIHV0:00000007 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:07:25.3942582+02:00 0HM2NOGUMIHV0:00000007 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:07:25.3943335+02:00 0HM2NOGUMIHV0:00000007 [INF] Getting reservation with id = 189 (37dc43e5)
+2020-09-13T11:07:25.3947283+02:00 0HM2NOGUMIHV0:00000007 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:07:25.4050833+02:00 0HM2NOGUMIHV0:00000007 [INF] Executed DbCommand ("8"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:07:25.4054548+02:00 0HM2NOGUMIHV0:00000007 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.1221ms. (50a9e262)
+2020-09-13T11:07:25.4057382+02:00 0HM2NOGUMIHV0:00000007 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:07:25.4059194+02:00 0HM2NOGUMIHV0:00000007 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" in 12.126ms (afa2e885)
+2020-09-13T11:07:25.4060373+02:00 0HM2NOGUMIHV0:00000007 [INF] Request finished in 13.6165ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:07:32.3397040+02:00 0HM2NOGUMIHV0:00000008 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/EditReservation/   (ca22a1cb)
+2020-09-13T11:07:32.3401335+02:00 0HM2NOGUMIHV0:00000008 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:32.3402478+02:00 0HM2NOGUMIHV0:00000008 [INF] Request finished in 0.6235ms 204  (791a596a)
+2020-09-13T11:07:32.3541651+02:00 0HM2NOGUMIHV0:00000009 [INF] Request starting HTTP/1.1 PUT http://localhost:61038/api/reservation/EditReservation/ application/json 148 (ca22a1cb)
+2020-09-13T11:07:32.3542753+02:00 0HM2NOGUMIHV0:00000009 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:07:32.3545493+02:00 0HM2NOGUMIHV0:00000009 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:07:32.3605057+02:00 0HM2NOGUMIHV0:00000009 [INF] Route matched with "{action = \"PutReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutReservation(UserWebApi.Models.Reservation)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:07:32.3611560+02:00 0HM2NOGUMIHV0:00000009 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:07:32.3752801+02:00 0HM2NOGUMIHV0:00000009 [INF] Executing action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:07:32.3814023+02:00 0HM2NOGUMIHV0:00000009 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:07:32.3875778+02:00 0HM2NOGUMIHV0:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:07:32.4230546+02:00 0HM2NOGUMIHV0:00000009 [INF] Executed DbCommand ("3"ms) [Parameters=["@__reservation_RoomType_0='?' (Size = 150), @__reservation_DateFrom_1='?' (DbType = Date), @__reservation_DateTo_2='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Reservations] AS [r]
+        WHERE (([r].[RoomType] = @__reservation_RoomType_0) AND (@__reservation_DateFrom_1 < [r].[DateTo])) AND (@__reservation_DateTo_2 > [r].[DateFrom]))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-13T11:07:32.4268017+02:00 0HM2NOGUMIHV0:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:07:32.4276888+02:00 0HM2NOGUMIHV0:00000009 [INF] Double room with balcony is not available on all or some dates in the period from 15.9.2020.  to 17.9.2020.  (9fade993)
+2020-09-13T11:07:32.4282205+02:00 0HM2NOGUMIHV0:00000009 [INF] Executed action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult" in 52.6116ms. (50a9e262)
+2020-09-13T11:07:32.4284104+02:00 0HM2NOGUMIHV0:00000009 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-09-13T11:07:32.4310638+02:00 0HM2NOGUMIHV0:00000009 [INF] Executed action "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" in 70.2481ms (afa2e885)
+2020-09-13T11:07:32.4313019+02:00 0HM2NOGUMIHV0:00000009 [INF] Request finished in 77.1022ms 422 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:08:22.3842897+02:00 0HM2NOGUMIHV0:0000000A [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/EditReservation/   (ca22a1cb)
+2020-09-13T11:08:22.3845783+02:00 0HM2NOGUMIHV0:0000000A [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:22.3847807+02:00 0HM2NOGUMIHV0:0000000A [INF] Request finished in 0.6058ms 204  (791a596a)
+2020-09-13T11:08:22.3991526+02:00 0HM2NOGUMIHV0:0000000B [INF] Request starting HTTP/1.1 PUT http://localhost:61038/api/reservation/EditReservation/ application/json 148 (ca22a1cb)
+2020-09-13T11:08:22.4004407+02:00 0HM2NOGUMIHV0:0000000B [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:22.4010646+02:00 0HM2NOGUMIHV0:0000000B [INF] Successfully validated the token. (60169667)
+2020-09-13T11:08:22.4013293+02:00 0HM2NOGUMIHV0:0000000B [INF] Route matched with "{action = \"PutReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutReservation(UserWebApi.Models.Reservation)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:08:22.4015734+02:00 0HM2NOGUMIHV0:0000000B [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:08:22.4022889+02:00 0HM2NOGUMIHV0:0000000B [INF] Executing action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:08:22.4027958+02:00 0HM2NOGUMIHV0:0000000B [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:08:22.4127931+02:00 0HM2NOGUMIHV0:0000000B [INF] Executed DbCommand ("9"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:08:22.4172357+02:00 0HM2NOGUMIHV0:0000000B [INF] Executed DbCommand ("3"ms) [Parameters=["@__reservation_RoomType_0='?' (Size = 150), @__reservation_DateFrom_1='?' (DbType = Date), @__reservation_DateTo_2='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Reservations] AS [r]
+        WHERE (([r].[RoomType] = @__reservation_RoomType_0) AND (@__reservation_DateFrom_1 < [r].[DateTo])) AND (@__reservation_DateTo_2 > [r].[DateFrom]))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-13T11:08:22.4195316+02:00 0HM2NOGUMIHV0:0000000B [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:08:22.4198690+02:00 0HM2NOGUMIHV0:0000000B [INF] Double room with balcony is not available on all or some dates in the period from 20.9.2020.  to 23.9.2020.  (3e2919fc)
+2020-09-13T11:08:22.4200197+02:00 0HM2NOGUMIHV0:0000000B [INF] Executed action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult" in 17.6519ms. (50a9e262)
+2020-09-13T11:08:22.4201599+02:00 0HM2NOGUMIHV0:0000000B [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-09-13T11:08:22.4204282+02:00 0HM2NOGUMIHV0:0000000B [INF] Executed action "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" in 18.8967ms (afa2e885)
+2020-09-13T11:08:22.4205735+02:00 0HM2NOGUMIHV0:0000000B [INF] Request finished in 21.484ms 422 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:08:44.1542866+02:00 0HM2NOGUMIHV0:0000000C [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/EditReservation/   (ca22a1cb)
+2020-09-13T11:08:44.1545799+02:00 0HM2NOGUMIHV0:0000000C [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:44.1547619+02:00 0HM2NOGUMIHV0:0000000C [INF] Request finished in 0.5609ms 204  (791a596a)
+2020-09-13T11:08:44.1643330+02:00 0HM2NOGUMIHV0:0000000D [INF] Request starting HTTP/1.1 PUT http://localhost:61038/api/reservation/EditReservation/ application/json 148 (ca22a1cb)
+2020-09-13T11:08:44.1645106+02:00 0HM2NOGUMIHV0:0000000D [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:44.1649823+02:00 0HM2NOGUMIHV0:0000000D [INF] Successfully validated the token. (60169667)
+2020-09-13T11:08:44.1651977+02:00 0HM2NOGUMIHV0:0000000D [INF] Route matched with "{action = \"PutReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutReservation(UserWebApi.Models.Reservation)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:08:44.1653270+02:00 0HM2NOGUMIHV0:0000000D [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:08:44.1668841+02:00 0HM2NOGUMIHV0:0000000D [INF] Executing action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:08:44.1707575+02:00 0HM2NOGUMIHV0:0000000D [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:08:44.1737237+02:00 0HM2NOGUMIHV0:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:08:44.1757671+02:00 0HM2NOGUMIHV0:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@__reservation_RoomType_0='?' (Size = 150), @__reservation_DateFrom_1='?' (DbType = Date), @__reservation_DateTo_2='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Reservations] AS [r]
+        WHERE (([r].[RoomType] = @__reservation_RoomType_0) AND (@__reservation_DateFrom_1 < [r].[DateTo])) AND (@__reservation_DateTo_2 > [r].[DateFrom]))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-13T11:08:44.1772675+02:00 0HM2NOGUMIHV0:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:08:44.1775100+02:00 0HM2NOGUMIHV0:0000000D [INF] Double room with balcony is not available on all or some dates in the period from 25.9.2020.  to 28.9.2020.  (689350c4)
+2020-09-13T11:08:44.1776367+02:00 0HM2NOGUMIHV0:0000000D [INF] Executed action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult" in 10.4814ms. (50a9e262)
+2020-09-13T11:08:44.1777484+02:00 0HM2NOGUMIHV0:0000000D [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-09-13T11:08:44.1780265+02:00 0HM2NOGUMIHV0:0000000D [INF] Executed action "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" in 12.7529ms (afa2e885)
+2020-09-13T11:08:44.1781373+02:00 0HM2NOGUMIHV0:0000000D [INF] Request finished in 13.846ms 422 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:08:49.5939150+02:00 0HM2NOGUMIHV0:0000000E [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:08:49.5941776+02:00 0HM2NOGUMIHV0:0000000E [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:49.5942761+02:00 0HM2NOGUMIHV0:0000000E [INF] Request finished in 1.0635ms 204  (791a596a)
+2020-09-13T11:08:49.6258173+02:00 0HM2NOGUMIHV0:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:08:49.6259353+02:00 0HM2NOGUMIHV0:0000000F [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:49.6262277+02:00 0HM2NOGUMIHV0:0000000F [INF] Successfully validated the token. (60169667)
+2020-09-13T11:08:49.6264174+02:00 0HM2NOGUMIHV0:0000000F [INF] Route matched with "{action = \"GetReservations\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[UserWebApi.Models.Reservation] GetReservations()" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:08:49.6265289+02:00 0HM2NOGUMIHV0:0000000F [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:08:49.6267295+02:00 0HM2NOGUMIHV0:0000000F [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:08:49.6267678+02:00 0HM2NOGUMIHV0:0000000F [INF] Getting all reservations (68a71175)
+2020-09-13T11:08:49.6268295+02:00 0HM2NOGUMIHV0:0000000F [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0478ms. (50a9e262)
+2020-09-13T11:08:49.6269148+02:00 0HM2NOGUMIHV0:0000000F [INF] Executing ObjectResult, writing value of type '"Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[UserWebApi.Models.Reservation, UserWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-09-13T11:08:49.6274555+02:00 0HM2NOGUMIHV0:0000000F [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:08:49.6301518+02:00 0HM2NOGUMIHV0:0000000F [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:08:49.6307733+02:00 0HM2NOGUMIHV0:0000000F [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" in 4.277ms (afa2e885)
+2020-09-13T11:08:49.6309042+02:00 0HM2NOGUMIHV0:0000000F [INF] Request finished in 5.7779ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:08:58.8679240+02:00 0HM2NOGUMIHV0:00000010 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:08:58.8713624+02:00 0HM2NOGUMIHV0:00000010 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:58.8714686+02:00 0HM2NOGUMIHV0:00000010 [INF] Request finished in 5.3843ms 204  (791a596a)
+2020-09-13T11:08:58.8961810+02:00 0HM2NOGUMIHV0:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:08:58.8963074+02:00 0HM2NOGUMIHV0:00000011 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:08:58.8967542+02:00 0HM2NOGUMIHV0:00000011 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:08:58.8969516+02:00 0HM2NOGUMIHV0:00000011 [INF] Route matched with "{action = \"GetReservations\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[UserWebApi.Models.Reservation] GetReservations()" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:08:58.8970540+02:00 0HM2NOGUMIHV0:00000011 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:08:58.8973217+02:00 0HM2NOGUMIHV0:00000011 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:08:58.8973745+02:00 0HM2NOGUMIHV0:00000011 [INF] Getting all reservations (68a71175)
+2020-09-13T11:08:58.8974388+02:00 0HM2NOGUMIHV0:00000011 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.038ms. (50a9e262)
+2020-09-13T11:08:58.8975532+02:00 0HM2NOGUMIHV0:00000011 [INF] Executing ObjectResult, writing value of type '"Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[UserWebApi.Models.Reservation, UserWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-09-13T11:08:58.8981021+02:00 0HM2NOGUMIHV0:00000011 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:08:58.9088688+02:00 0HM2NOGUMIHV0:00000011 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:08:58.9094628+02:00 0HM2NOGUMIHV0:00000011 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" in 12.3903ms (afa2e885)
+2020-09-13T11:08:58.9095703+02:00 0HM2NOGUMIHV0:00000011 [INF] Request finished in 13.4246ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:09:00.4523423+02:00 0HM2NOGUMIHV0:00000012 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservationById/189   (ca22a1cb)
+2020-09-13T11:09:00.4528547+02:00 0HM2NOGUMIHV0:00000012 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:00.4537022+02:00 0HM2NOGUMIHV0:00000012 [INF] Request finished in 1.3948ms 204  (791a596a)
+2020-09-13T11:09:00.4671335+02:00 0HM2NOGUMIHV0:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservationById/189   (ca22a1cb)
+2020-09-13T11:09:00.4676780+02:00 0HM2NOGUMIHV0:00000013 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:00.4681659+02:00 0HM2NOGUMIHV0:00000013 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:09:00.4683610+02:00 0HM2NOGUMIHV0:00000013 [INF] Route matched with "{action = \"GetReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReservation(Int32)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:09:00.4684768+02:00 0HM2NOGUMIHV0:00000013 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:09:00.4688457+02:00 0HM2NOGUMIHV0:00000013 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:09:00.4690600+02:00 0HM2NOGUMIHV0:00000013 [INF] Getting reservation with id = 189 (37dc43e5)
+2020-09-13T11:09:00.4694959+02:00 0HM2NOGUMIHV0:00000013 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:09:00.4749423+02:00 0HM2NOGUMIHV0:00000013 [INF] Executed DbCommand ("4"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:09:00.4754205+02:00 0HM2NOGUMIHV0:00000013 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.3361ms. (50a9e262)
+2020-09-13T11:09:00.4755927+02:00 0HM2NOGUMIHV0:00000013 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:09:00.4757594+02:00 0HM2NOGUMIHV0:00000013 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" in 7.3346ms (afa2e885)
+2020-09-13T11:09:00.4759934+02:00 0HM2NOGUMIHV0:00000013 [INF] Request finished in 8.8018ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:09:00.5906946+02:00 0HM2NOGUMIHV0:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservationById/189   (ca22a1cb)
+2020-09-13T11:09:00.5921095+02:00 0HM2NOGUMIHV0:00000014 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:00.5924479+02:00 0HM2NOGUMIHV0:00000014 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:09:00.5926489+02:00 0HM2NOGUMIHV0:00000014 [INF] Route matched with "{action = \"GetReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReservation(Int32)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:09:00.5927714+02:00 0HM2NOGUMIHV0:00000014 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:09:00.5930525+02:00 0HM2NOGUMIHV0:00000014 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:09:00.5930937+02:00 0HM2NOGUMIHV0:00000014 [INF] Getting reservation with id = 189 (37dc43e5)
+2020-09-13T11:09:00.5939258+02:00 0HM2NOGUMIHV0:00000014 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:09:00.6111356+02:00 0HM2NOGUMIHV0:00000014 [INF] Executed DbCommand ("15"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:09:00.6114079+02:00 0HM2NOGUMIHV0:00000014 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 18.2944ms. (50a9e262)
+2020-09-13T11:09:00.6115102+02:00 0HM2NOGUMIHV0:00000014 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:09:00.6117355+02:00 0HM2NOGUMIHV0:00000014 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" in 19.0012ms (afa2e885)
+2020-09-13T11:09:00.6118424+02:00 0HM2NOGUMIHV0:00000014 [INF] Request finished in 45.1547ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:09:10.2321786+02:00 0HM2NOGUMIHV0:00000015 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/EditReservation/   (ca22a1cb)
+2020-09-13T11:09:10.2326396+02:00 0HM2NOGUMIHV0:00000015 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:10.2327560+02:00 0HM2NOGUMIHV0:00000015 [INF] Request finished in 0.6732ms 204  (791a596a)
+2020-09-13T11:09:10.2462367+02:00 0HM2NOGUMIHV0:00000016 [INF] Request starting HTTP/1.1 PUT http://localhost:61038/api/reservation/EditReservation/ application/json 148 (ca22a1cb)
+2020-09-13T11:09:10.2463541+02:00 0HM2NOGUMIHV0:00000016 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:10.2467521+02:00 0HM2NOGUMIHV0:00000016 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:09:10.2469418+02:00 0HM2NOGUMIHV0:00000016 [INF] Route matched with "{action = \"PutReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutReservation(UserWebApi.Models.Reservation)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:09:10.2470363+02:00 0HM2NOGUMIHV0:00000016 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:09:10.2475484+02:00 0HM2NOGUMIHV0:00000016 [INF] Executing action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:09:10.2479823+02:00 0HM2NOGUMIHV0:00000016 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:09:10.2531054+02:00 0HM2NOGUMIHV0:00000016 [INF] Executed DbCommand ("4"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:09:10.2645877+02:00 0HM2NOGUMIHV0:00000016 [INF] Executed DbCommand ("10"ms) [Parameters=["@__reservation_RoomType_0='?' (Size = 150), @__reservation_DateFrom_1='?' (DbType = Date), @__reservation_DateTo_2='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Reservations] AS [r]
+        WHERE (([r].[RoomType] = @__reservation_RoomType_0) AND (@__reservation_DateFrom_1 < [r].[DateTo])) AND (@__reservation_DateTo_2 > [r].[DateFrom]))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-13T11:09:10.2723006+02:00 0HM2NOGUMIHV0:00000016 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:09:10.2725755+02:00 0HM2NOGUMIHV0:00000016 [INF] Reservation with id = 189 is about to be edited! (37feed25)
+2020-09-13T11:09:10.4033489+02:00 0HM2NOGUMIHV0:00000016 [INF] Executed DbCommand ("3"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (DbType = Date), @p1='?' (DbType = Date), @p2='?' (Size = 150)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Reservations] SET [DateFrom] = @p0, [DateTo] = @p1, [RoomType] = @p2
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-09-13T11:09:10.4245896+02:00 0HM2NOGUMIHV0:00000016 [INF] Executed action method "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 176.8675ms. (50a9e262)
+2020-09-13T11:09:10.4247977+02:00 0HM2NOGUMIHV0:00000016 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:09:10.4272973+02:00 0HM2NOGUMIHV0:00000016 [INF] Executed action "UserWebApi.Controllers.ReservationController.PutReservation (UserWebApi)" in 180.2763ms (afa2e885)
+2020-09-13T11:09:10.4274324+02:00 0HM2NOGUMIHV0:00000016 [INF] Request finished in 181.2288ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:09:13.6093221+02:00 0HM2NOGUMIHV0:00000017 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:09:13.6097950+02:00 0HM2NOGUMIHV0:00000017 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:13.6099218+02:00 0HM2NOGUMIHV0:00000017 [INF] Request finished in 0.6971ms 204  (791a596a)
+2020-09-13T11:09:13.6241434+02:00 0HM2NOGUMIHV0:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:09:13.6242801+02:00 0HM2NOGUMIHV0:00000018 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:13.6245991+02:00 0HM2NOGUMIHV0:00000018 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:09:13.6247924+02:00 0HM2NOGUMIHV0:00000018 [INF] Route matched with "{action = \"GetReservations\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[UserWebApi.Models.Reservation] GetReservations()" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:09:13.6249032+02:00 0HM2NOGUMIHV0:00000018 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:09:13.6254591+02:00 0HM2NOGUMIHV0:00000018 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:09:13.6255483+02:00 0HM2NOGUMIHV0:00000018 [INF] Getting all reservations (68a71175)
+2020-09-13T11:09:13.6256805+02:00 0HM2NOGUMIHV0:00000018 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0683ms. (50a9e262)
+2020-09-13T11:09:13.6258548+02:00 0HM2NOGUMIHV0:00000018 [INF] Executing ObjectResult, writing value of type '"Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[UserWebApi.Models.Reservation, UserWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-09-13T11:09:13.6264273+02:00 0HM2NOGUMIHV0:00000018 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:09:13.6355196+02:00 0HM2NOGUMIHV0:00000018 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:09:13.6365594+02:00 0HM2NOGUMIHV0:00000018 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" in 11.6105ms (afa2e885)
+2020-09-13T11:09:13.6383490+02:00 0HM2NOGUMIHV0:00000018 [INF] Request finished in 14.2293ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:09:48.5563974+02:00 0HM2NOGUMIHV0:00000019 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/AddNewReservation   (ca22a1cb)
+2020-09-13T11:09:48.5566715+02:00 0HM2NOGUMIHV0:00000019 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:48.5568849+02:00 0HM2NOGUMIHV0:00000019 [INF] Request finished in 0.5525ms 204  (791a596a)
+2020-09-13T11:09:48.5707684+02:00 0HM2NOGUMIHV0:0000001A [INF] Request starting HTTP/1.1 POST http://localhost:61038/api/reservation/AddNewReservation application/json 141 (ca22a1cb)
+2020-09-13T11:09:48.5709676+02:00 0HM2NOGUMIHV0:0000001A [INF] Policy execution successful. (0204925d)
+2020-09-13T11:09:48.5712927+02:00 0HM2NOGUMIHV0:0000001A [INF] Successfully validated the token. (60169667)
+2020-09-13T11:09:48.5814224+02:00 0HM2NOGUMIHV0:0000001A [INF] Route matched with "{action = \"PostReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostReservation(UserWebApi.Models.Reservation)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:09:48.5816256+02:00 0HM2NOGUMIHV0:0000001A [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:09:48.5824459+02:00 0HM2NOGUMIHV0:0000001A [INF] Executing action method "UserWebApi.Controllers.ReservationController.PostReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:09:48.5888526+02:00 0HM2NOGUMIHV0:0000001A [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:09:48.5913360+02:00 0HM2NOGUMIHV0:0000001A [INF] Executed DbCommand ("2"ms) [Parameters=["@__reservation_RoomType_0='?' (Size = 150), @__reservation_DateFrom_1='?' (DbType = Date), @__reservation_DateTo_2='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Reservations] AS [r]
+        WHERE (([r].[RoomType] = @__reservation_RoomType_0) AND (@__reservation_DateFrom_1 < [r].[DateTo])) AND (@__reservation_DateTo_2 > [r].[DateFrom]))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-13T11:09:48.5966474+02:00 0HM2NOGUMIHV0:0000001A [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:09:48.5968359+02:00 0HM2NOGUMIHV0:0000001A [INF] Double room with balcony is not available on all or some dates in the period from 30.9.2020.  to 1.10.2020.  (a172e2d7)
+2020-09-13T11:09:48.5969986+02:00 0HM2NOGUMIHV0:0000001A [INF] Executed action method "UserWebApi.Controllers.ReservationController.PostReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult" in 14.4152ms. (50a9e262)
+2020-09-13T11:09:48.5971315+02:00 0HM2NOGUMIHV0:0000001A [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-09-13T11:09:48.5974013+02:00 0HM2NOGUMIHV0:0000001A [INF] Executed action "UserWebApi.Controllers.ReservationController.PostReservation (UserWebApi)" in 15.8633ms (afa2e885)
+2020-09-13T11:09:48.5975330+02:00 0HM2NOGUMIHV0:0000001A [INF] Request finished in 26.8627ms 422 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:10:06.5777965+02:00 0HM2NOGUMIHV0:0000001B [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/AddNewReservation   (ca22a1cb)
+2020-09-13T11:10:06.5780626+02:00 0HM2NOGUMIHV0:0000001B [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:06.5781741+02:00 0HM2NOGUMIHV0:0000001B [INF] Request finished in 0.4498ms 204  (791a596a)
+2020-09-13T11:10:06.5933320+02:00 0HM2NOGUMIHV0:0000001C [INF] Request starting HTTP/1.1 POST http://localhost:61038/api/reservation/AddNewReservation application/json 128 (ca22a1cb)
+2020-09-13T11:10:06.5934363+02:00 0HM2NOGUMIHV0:0000001C [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:06.5946562+02:00 0HM2NOGUMIHV0:0000001C [INF] Successfully validated the token. (60169667)
+2020-09-13T11:10:06.5948642+02:00 0HM2NOGUMIHV0:0000001C [INF] Route matched with "{action = \"PostReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostReservation(UserWebApi.Models.Reservation)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:10:06.5949494+02:00 0HM2NOGUMIHV0:0000001C [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:10:06.6189733+02:00 0HM2NOGUMIHV0:0000001C [INF] Executing action method "UserWebApi.Controllers.ReservationController.PostReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:10:06.6194851+02:00 0HM2NOGUMIHV0:0000001C [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:10:06.6313883+02:00 0HM2NOGUMIHV0:0000001C [INF] Executed DbCommand ("11"ms) [Parameters=["@__reservation_RoomType_0='?' (Size = 150), @__reservation_DateFrom_1='?' (DbType = Date), @__reservation_DateTo_2='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Reservations] AS [r]
+        WHERE (([r].[RoomType] = @__reservation_RoomType_0) AND (@__reservation_DateFrom_1 < [r].[DateTo])) AND (@__reservation_DateTo_2 > [r].[DateFrom]))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-09-13T11:10:06.6445897+02:00 0HM2NOGUMIHV0:0000001C [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:10:06.6620943+02:00 0HM2NOGUMIHV0:0000001C [INF] New reservation for Ana Pavić is about to be added! (fe0b5ec8)
+2020-09-13T11:10:06.7263836+02:00 0HM2NOGUMIHV0:0000001C [INF] Executed DbCommand ("60"ms) [Parameters=["@p0='?' (DbType = Date), @p1='?' (DbType = Date), @p2='?' (Size = 150), @p3='?' (Size = 150), @p4='?' (DbType = Int32), @p5='?' (Size = 150)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Reservations] ([DateFrom], [DateTo], [FirstName], [LastName], [NumOfPeople], [RoomType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Reservations]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-09-13T11:10:06.7354559+02:00 0HM2NOGUMIHV0:0000001C [INF] New reservation's id = 208 (da9c2342)
+2020-09-13T11:10:06.7388593+02:00 0HM2NOGUMIHV0:0000001C [INF] Executed action method "UserWebApi.Controllers.ReservationController.PostReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.CreatedAtActionResult" in 119.7507ms. (50a9e262)
+2020-09-13T11:10:06.7390424+02:00 0HM2NOGUMIHV0:0000001C [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:10:06.7470643+02:00 0HM2NOGUMIHV0:0000001C [INF] Executed action "UserWebApi.Controllers.ReservationController.PostReservation (UserWebApi)" in 152.1102ms (afa2e885)
+2020-09-13T11:10:06.7472233+02:00 0HM2NOGUMIHV0:0000001C [INF] Request finished in 153.9323ms 201 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:10:09.8313585+02:00 0HM2NOGUMIHV0:0000001D [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:10:09.8317953+02:00 0HM2NOGUMIHV0:0000001D [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:09.8319295+02:00 0HM2NOGUMIHV0:0000001D [INF] Request finished in 0.8742ms 204  (791a596a)
+2020-09-13T11:10:09.8558114+02:00 0HM2NOGUMIHV0:0000001E [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservations   (ca22a1cb)
+2020-09-13T11:10:09.8563204+02:00 0HM2NOGUMIHV0:0000001E [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:09.8567721+02:00 0HM2NOGUMIHV0:0000001E [INF] Successfully validated the token. (60169667)
+2020-09-13T11:10:09.8570487+02:00 0HM2NOGUMIHV0:0000001E [INF] Route matched with "{action = \"GetReservations\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[UserWebApi.Models.Reservation] GetReservations()" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:10:09.8571582+02:00 0HM2NOGUMIHV0:0000001E [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:10:09.8573542+02:00 0HM2NOGUMIHV0:0000001E [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:10:09.8573988+02:00 0HM2NOGUMIHV0:0000001E [INF] Getting all reservations (68a71175)
+2020-09-13T11:10:09.8574483+02:00 0HM2NOGUMIHV0:0000001E [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0435ms. (50a9e262)
+2020-09-13T11:10:09.8575597+02:00 0HM2NOGUMIHV0:0000001E [INF] Executing ObjectResult, writing value of type '"Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[UserWebApi.Models.Reservation, UserWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-09-13T11:10:09.8584299+02:00 0HM2NOGUMIHV0:0000001E [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:10:09.8726574+02:00 0HM2NOGUMIHV0:0000001E [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[DateFrom], [r].[DateTo], [r].[FirstName], [r].[LastName], [r].[NumOfPeople], [r].[RoomType]
+FROM [Reservations] AS [r]" (0723d8ff)
+2020-09-13T11:10:09.8733824+02:00 0HM2NOGUMIHV0:0000001E [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservations (UserWebApi)" in 16.2516ms (afa2e885)
+2020-09-13T11:10:09.8734915+02:00 0HM2NOGUMIHV0:0000001E [INF] Request finished in 17.7574ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:10:17.0308539+02:00 0HM2NOGUMIHV0:0000001F [INF] Request starting HTTP/1.1 OPTIONS http://localhost:61038/api/reservation/GetReservationById/206   (ca22a1cb)
+2020-09-13T11:10:17.0311391+02:00 0HM2NOGUMIHV0:0000001F [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:17.0312662+02:00 0HM2NOGUMIHV0:0000001F [INF] Request finished in 1.0819ms 204  (791a596a)
+2020-09-13T11:10:17.0507694+02:00 0HM2NOGUMIHV0:00000020 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservationById/206   (ca22a1cb)
+2020-09-13T11:10:17.0508851+02:00 0HM2NOGUMIHV0:00000020 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:17.0511913+02:00 0HM2NOGUMIHV0:00000020 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:10:17.0513853+02:00 0HM2NOGUMIHV0:00000020 [INF] Route matched with "{action = \"GetReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReservation(Int32)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:10:17.0514795+02:00 0HM2NOGUMIHV0:00000020 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:10:17.0517701+02:00 0HM2NOGUMIHV0:00000020 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:10:17.0518252+02:00 0HM2NOGUMIHV0:00000020 [INF] Getting reservation with id = 206 (59cb9c5a)
+2020-09-13T11:10:17.0521831+02:00 0HM2NOGUMIHV0:00000020 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:10:17.0664342+02:00 0HM2NOGUMIHV0:00000020 [INF] Executed DbCommand ("13"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:10:17.0667693+02:00 0HM2NOGUMIHV0:00000020 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 14.9133ms. (50a9e262)
+2020-09-13T11:10:17.0668813+02:00 0HM2NOGUMIHV0:00000020 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:10:17.0673250+02:00 0HM2NOGUMIHV0:00000020 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" in 15.8634ms (afa2e885)
+2020-09-13T11:10:17.0674653+02:00 0HM2NOGUMIHV0:00000020 [INF] Request finished in 16.7233ms 200 application/json; charset=utf-8 (791a596a)
+2020-09-13T11:10:17.3323388+02:00 0HM2NOGUMIHV0:00000021 [INF] Request starting HTTP/1.1 GET http://localhost:61038/api/reservation/GetReservationById/206   (ca22a1cb)
+2020-09-13T11:10:17.3324480+02:00 0HM2NOGUMIHV0:00000021 [INF] Policy execution successful. (0204925d)
+2020-09-13T11:10:17.3327152+02:00 0HM2NOGUMIHV0:00000021 [INF] Successfully validated the token. (60169667)
+2020-09-13T11:10:17.3328882+02:00 0HM2NOGUMIHV0:00000021 [INF] Route matched with "{action = \"GetReservation\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReservation(Int32)" on controller "UserWebApi.Controllers.ReservationController" ("UserWebApi"). (122b2fdf)
+2020-09-13T11:10:17.3329982+02:00 0HM2NOGUMIHV0:00000021 [INF] Authorization was successful. (0d575a54)
+2020-09-13T11:10:17.3332768+02:00 0HM2NOGUMIHV0:00000021 [INF] Executing action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" - Validation state: Valid (dad538d7)
+2020-09-13T11:10:17.3333194+02:00 0HM2NOGUMIHV0:00000021 [INF] Getting reservation with id = 206 (59cb9c5a)
+2020-09-13T11:10:17.3336423+02:00 0HM2NOGUMIHV0:00000021 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"ReservationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-09-13T11:10:17.3492108+02:00 0HM2NOGUMIHV0:00000021 [INF] Executed DbCommand ("14"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[DateFrom], [e].[DateTo], [e].[FirstName], [e].[LastName], [e].[NumOfPeople], [e].[RoomType]
+FROM [Reservations] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-09-13T11:10:17.3495116+02:00 0HM2NOGUMIHV0:00000021 [INF] Executed action method "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 16.1641ms. (50a9e262)
+2020-09-13T11:10:17.3496317+02:00 0HM2NOGUMIHV0:00000021 [INF] Executing ObjectResult, writing value of type '"UserWebApi.Models.Reservation"'. (8a1b66c8)
+2020-09-13T11:10:17.3498083+02:00 0HM2NOGUMIHV0:00000021 [INF] Executed action "UserWebApi.Controllers.ReservationController.GetReservation (UserWebApi)" in 16.8245ms (afa2e885)
+2020-09-13T11:10:17.3499349+02:00 0HM2NOGUMIHV0:00000021 [INF] Request finished in 17.6306ms 200 application/json; charset=utf-8 (791a596a)
